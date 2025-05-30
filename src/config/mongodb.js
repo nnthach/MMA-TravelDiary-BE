@@ -9,7 +9,9 @@ const mongoClientInstance = new MongoClient(env.MONGODB_URI, {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
+    tls: true,
+
 })
 
 
